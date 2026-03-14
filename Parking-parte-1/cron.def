@@ -1,0 +1,17 @@
+#####################################################################################
+## ISCTE-IUL: Trabalho prático de Sistemas Operativos 2024/2025, Enunciado Versão 1
+##
+## Aluno: Nº:129869       Nome:Diogo Gonçalves
+## Nome do Módulo: S2.3 cron.def
+## Descrição/Explicação do Módulo:Após algum estudo foi possivel implementar este modulo, para o primeiro caso (13:01), metemos na primeira parte um 1 pois é o campo referente aos minutos
+## Na segunda colocamos13 referente ás horas depois deixamos os proximos dois campos vazios pois queremos todos os dias de todos os meses, fora os sabados e domingos, onde entra entao o ultimo campo
+##que diz que so queremos de segunda a sexta
+## Explicação de quais os comandos a usar para configurar o seu sistema Linux
+## usando este ficheiro: o comando que usei foi "cd /home/a129869/Projetao/parte-1 && ./manutencao.sh" onde primeiramente ele vai entrar na diretoria onde estao os scripts, de seguida roda o mesmo
+## Para confiurar fiz "crontab cron.def" na mesma diretoria do cron.def para definir o cron.def como a definição que eu quero seguir e 
+## depois fiz "crontab -l" para verificar se o mesmo foi adicionado com sucesso
+#####################################################################################
+
+1 13 * * 1-5 cd /home/a129869/Projetao/parte-1 && ./manutencao.sh
+
+59 5 * * 1-5 cd /home/a129869/Projetao/parte-1 && ./manutencao.sh
